@@ -1,4 +1,4 @@
-#/Pre built methods for the GET, POST, PATCH, PUT, DELETE Requests
+# Pre built methods for the GET, POST, PATCH, PUT, DELETE Requests
 
 import json
 import requests
