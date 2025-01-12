@@ -7,6 +7,7 @@ from src.utils.utils import Utils
 
 
 
+
 import allure
 import pytest
 
@@ -21,6 +22,7 @@ def create_token():
         in_json=False
     )
     verify_http_status_code(response_data=response,expected_data=200)
+    print(response.text)
     verify_json_key_not_none(response.json()["token"])
     return response.json()["token"]
 
